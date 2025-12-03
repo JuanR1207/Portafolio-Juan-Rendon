@@ -11,13 +11,10 @@ document.querySelectorAll('.menu a').forEach(link => {
 // ---- Mensaje al enviar el formulario ----
 const formulario = document.querySelector(".formulario");
 
-formulario.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    alert("¡Gracias por tu mensaje! Pronto me pondré en contacto contigo.");
-
-    formulario.reset();
+formulario.addEventListener("submit", function () {
+    alert("¡Tu mensaje ha sido enviado!");
 });
+
 
 // ---- Menú hamburguesa ----
 const btnHamburguesa = document.querySelector(".hamburguesa");
@@ -49,3 +46,16 @@ function animarBarras() {
 
 window.addEventListener("scroll", animarBarras);
 window.addEventListener("load", animarBarras);
+
+// --- Cerrar menú hamburguesa al hacer clic en un enlace ---
+const linksMenu = document.querySelectorAll(".menu a");
+const menuNav = document.querySelector(".menu");
+const btnnHamburguesa = document.querySelector(".hamburguesa");
+
+linksMenu.forEach(link => {
+    link.addEventListener("click", () => {
+        menuNav.classList.remove("activo");   // Oculta el menú
+        btnHamburguesa.classList.remove("activa"); // Vuelve la X a hamburguesa
+    });
+});
+

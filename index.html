@@ -35,7 +35,7 @@
 
             <main class="main">
                 <div class="info-content">
-                    <h1>Yo Soy <span>Juan</span> Rendon</h1>
+                    <h1>Yo Soy <span class="typewriter">Juan Rendon</span></h1>
                     <p>
                         Aprendiz de Análisis y Desarrollo de Software con sólidos fundamentos
                         en programación, lógica, resolución de problemas y trabajo en equipo.
@@ -192,12 +192,13 @@
 
             <div class="contacto-contenedor">
                 
-                <form class="formulario">
+                <form class="formulario" action="https://formspree.io/f/xnnevleo" method="POST">
                     <h3>Envíame una sugerencia</h3>
 
-                    <input type="text" placeholder="Tu nombre" required>
-                    <input type="email" placeholder="Correo" required>
-                    <textarea placeholder="Tu mensaje" required></textarea>
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    <input type="email" name="correo" placeholder="Correo" required>
+                    <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+
 
                     <button type="submit" class="descargar-cv">Enviar</button>
                 </form>
@@ -214,7 +215,7 @@
                     <i class="fa-brands fa-github"></i>
                 </a>
 
-                <a href="" target="_blank">
+                <a href="https://wa.link/kl09k2" target="_blank">
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
 

@@ -511,4 +511,26 @@ img {
     height: auto;
 }
 
+/* --- Animacion Extra --- */
+.typewriter {
+    display: inline-block;
+    vertical-align: bottom;
+    border-right: 3px solid #39ff14;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s steps(11) infinite, 
+               blink .7s step-end infinite alternate;
+}
+
+@keyframes typing {
+    0%   { width: 0; }
+    50%  { width: 325px; } 
+    100% { width: 0; }
+}
+
+@keyframes blink {
+    0%   { border-color: transparent; }
+    100% { border-color: #39ff14; }
+}
+
 
