@@ -1,231 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan Jose Rendon Guzman</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    </head>
+    <body>
 
-    <div class="wrapper">
-        <header id="inicio">
-            <nav class="navbar">
-                <div class="brand">
-                    <h2>Juan Jose Rendon Guzman</h2>
+        <div class="wrapper">
+            <header id="inicio">
+                <nav class="navbar">
+                    <div class="brand">
+                        <h2>Juan Jose Rendon Guzman</h2>
+                    </div>
+
+                    <ul class="menu">
+                        <li><a class="active" href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre-mi">Acerca De Mi</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#intereses">Mis Intereses</a></li>
+                        <li><a href="#contacto">Contactame</a></li>
+                    </ul>
+
+                    <!-- Botón Hamburguesa -->
+                    <div class="hamburguesa">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </nav>
+            </header>
+
+            <main class="main">
+                <div class="info-content">
+                    <h1>Yo Soy <span>Juan</span> Rendon</h1>
+                    <p>
+                        Aprendiz de Análisis y Desarrollo de Software con sólidos fundamentos
+                        en programación, lógica, resolución de problemas y trabajo en equipo.
+                        Me caracterizo por mi disciplina, adaptabilidad y motivación por aprender nuevas tecnologías.
+                        Estoy en búsqueda de oportunidades para poner en práctica mis habilidades y seguir
+                        fortaleciendo mi perfil como desarrollador.
+                    </p>
+
+                    <a download href="CV/Hoja De Vida Juan Jose Rendon Guzman.pdf">
+                        <button class="descargar-cv">Descargar CV</button>
+                    </a>
                 </div>
 
-                <ul class="menu">
-                    <li><a class="active" href="#inicio">Inicio</a></li>
-                    <li><a href="#sobre-mi">Acerca De Mi</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#intereses">Mis Intereses</a></li>
-                    <li><a href="#contacto">Contactame</a></li>
-                </ul>
-
-                <!-- Botón Hamburguesa -->
-                <div class="hamburguesa">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-            </nav>
-        </header>
-
-        <main class="main">
-            <div class="info-content">
-                <h1>Yo Soy <span>Juan</span> Rendon</h1>
-                <p>
-                    Aprendiz de Análisis y Desarrollo de Software con sólidos fundamentos
-                    en programación, lógica, resolución de problemas y trabajo en equipo.
-                    Me caracterizo por mi disciplina, adaptabilidad y motivación por aprender nuevas tecnologías.
-                    Estoy en búsqueda de oportunidades para poner en práctica mis habilidades y seguir
-                    fortaleciendo mi perfil como desarrollador.
-                </p>
-
-                <a download href="CV/Hoja De Vida Juan Jose Rendon Guzman.pdf">
-                    <button class="descargar-cv">Descargar CV</button>
-                </a>
-            </div>
-
-            <img class="image" src="./img/yo.jpeg" alt="Juan Jose Rendon picture">
-        </main>
-    </div>
-
-  
-    <div class="about" id="sobre-mi">
-        <img src="./img/about.jpg" alt="Juan imagen">
-
-        <div class="about-info" fade-in>
-            <h2>Acerca De Mi</h2>
-            <div class="divider"></div>
-
-            <p>
-                Soy un aprendiz de Desarrollo de Software apasionado por crear soluciones prácticas 
-                y modernas. Me caracterizo por mi disciplina, capacidad analítica y compromiso con 
-                la mejora continua. Disfruto trabajar en proyectos donde pueda aplicar lógica, 
-                creatividad y buenas prácticas de programación.
-            </p>
-
-            <p>
-                Actualmente estoy fortaleciendo mis conocimientos en JavaScript, Bases de Datos, 
-                Python e Inteligencia Artificial, con el objetivo de crecer profesionalmente 
-                y aportar valor real a cualquier equipo de desarrollo.
-            </p>
+                <img class="image" src="./img/yo.jpeg" alt="Juan Jose Rendon picture">
+            </main>
         </div>
-    </div>
-
-   
-    <section class="proyectos" id="proyectos">
-        <h2 class="titulo-proyectos">Mis Proyectos</h2>
-
-        <div class="proyectos-grid">
-
-            <div class="proyecto-card">
-                <div class="proyecto-img" style="background-image: url('./img/To-Do.png');"></div>
-                <h3>Gestor de Tareas (To-Do App)</h3>
-                <p>Tecnologías: HTML, CSS, JavaScript.</p>
-
-                <div class="proyecto-info">
-                    <p>
-                        Aplicación para crear, editar y eliminar tareas.  
-                        Incluye filtros y almacenamiento en LocalStorage.
-                    </p>
-                </div>
-            </div>
-
-            <div class="proyecto-card">
-                <div class="proyecto-img" style="background-image: url('./img/Conver-Money.png');"></div>
-                <h3>Convertidor de Monedas</h3>
-                <p>Tecnologías: JavaScript.</p>
-
-                <div class="proyecto-info">
-                    <p>
-                        Convierte monedas en tiempo real mediante API.  
-                        Perfecto para practicar consumo de APIs.
-                    </p>
-                </div>
-            </div>
-
-            <div class="proyecto-card">
-                <div class="proyecto-img" style="background-image: url('./img/portafolio.png');"></div>
-                <h3>Portafolio Web Personal</h3>
-                <p>Tecnologías: HTML, CSS, JS.</p>
-
-                <div class="proyecto-info">
-                    <p>
-                        Portafolio moderno con animaciones, secciones personalizadas y CV descargable.
-                    </p>
-                </div>
-            </div>
-
-            <div class="proyecto-card centrado">
-                <div class="proyecto-img" style="background-image: url('./img/gestor.png');"></div>
-                <h3>Gestor De Cursos</h3>
-                <p>Tecnologías: JavaScript.</p>
-
-                <div class="proyecto-info">
-                    <p>
-                        Plataforma para gestionar cursos, inscripciones y seguimiento. 
-                        Ideal para practicar lógica y manejo de datos.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </section>
 
     
-    <section class="proyectos" id="intereses">
-        <h2 class="titulo-proyectos">Mis Intereses</h2>
-        <div class="divider"></div>
+        <div class="about" id="sobre-mi">
+            <img src="./img/about.jpg" alt="Juan imagen">
 
-        <div class="proyectos-grid">
+            <div class="about-info" fade-in>
+                <h2>Acerca De Mi</h2>
+                <div class="divider"></div>
 
-            <div class="proyecto-card">
-                <div class="proyecto-img" style="background-image: url('./img/AI.jpg');"></div>
-                <h3>Inteligencia Artificial</h3>
+                <p>
+                    Soy un aprendiz de Desarrollo de Software apasionado por crear soluciones prácticas 
+                    y modernas. Me caracterizo por mi disciplina, capacidad analítica y compromiso con 
+                    la mejora continua. Disfruto trabajar en proyectos donde pueda aplicar lógica, 
+                    creatividad y buenas prácticas de programación.
+                </p>
 
-                <div class="skill-bar">
-                    <div class="skill" data-porcentaje="85"></div>
-                </div>
-                <p class="skill-text">85%</p>
+                <p>
+                    Actualmente estoy fortaleciendo mis conocimientos en JavaScript, Bases de Datos, 
+                    Python e Inteligencia Artificial, con el objetivo de crecer profesionalmente 
+                    y aportar valor real a cualquier equipo de desarrollo.
+                </p>
             </div>
+        </div>
 
-            <div class="proyecto-card">
-                <div class="proyecto-img" style="background-image: url('./img/SQL.png');"></div>
-                <h3>SQL</h3>
+    
+        <section class="proyectos" id="proyectos">
+            <h2 class="titulo-proyectos">Mis Proyectos</h2>
+
+            <div class="proyectos-grid">
+
+                <div class="proyecto-card">
+                    <div class="proyecto-img" style="background-image: url('./img/To-Do.png');"></div>
+                    <h3>Gestor de Tareas (To-Do App)</h3>
+                    <p>Tecnologías: HTML, CSS, JavaScript.</p>
+
+                    <div class="proyecto-info">
+                        <p>
+                            Aplicación para crear, editar y eliminar tareas.  
+                            Incluye filtros y almacenamiento en LocalStorage.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proyecto-card">
+                    <div class="proyecto-img" style="background-image: url('./img/Conver-Money.png');"></div>
+                    <h3>Convertidor de Monedas</h3>
+                    <p>Tecnologías: JavaScript.</p>
+
+                    <div class="proyecto-info">
+                        <p>
+                            Convierte monedas en tiempo real mediante API.  
+                            Perfecto para practicar consumo de APIs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proyecto-card">
+                    <div class="proyecto-img" style="background-image: url('./img/portafolio.png');"></div>
+                    <h3>Portafolio Web Personal</h3>
+                    <p>Tecnologías: HTML, CSS, JS.</p>
+
+                    <div class="proyecto-info">
+                        <p>
+                            Portafolio moderno con animaciones, secciones personalizadas y CV descargable.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proyecto-card centrado">
+                    <div class="proyecto-img" style="background-image: url('./img/gestor.png');"></div>
+                    <h3>Gestor De Cursos</h3>
+                    <p>Tecnologías: JavaScript.</p>
+
+                    <div class="proyecto-info">
+                        <p>
+                            Plataforma para gestionar cursos, inscripciones y seguimiento. 
+                            Ideal para practicar lógica y manejo de datos.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        
+        <section class="proyectos" id="intereses">
+            <h2 class="titulo-proyectos">Mis Intereses</h2>
+            <div class="divider"></div>
+
+            <div class="proyectos-grid">
+
+                <div class="proyecto-card">
+                    <div class="proyecto-img" style="background-image: url('./img/AI.jpg');"></div>
+                    <h3>Inteligencia Artificial</h3>
+
+                    <div class="skill-bar">
+                        <div class="skill" data-porcentaje="85"></div>
+                    </div>
+                    <p class="skill-text">85%</p>
+                </div>
+
+                <div class="proyecto-card">
+                    <div class="proyecto-img" style="background-image: url('./img/SQL.png');"></div>
+                    <h3>SQL</h3>
+                    
+                    <div class="skill-bar">
+                        <div class="skill" data-porcentaje="40"></div>
+                    </div>
+                    <p class="skill-text">40%</p>
+                </div>
+
+                <div class="proyecto-card">
+                    <div class="proyecto-img" style="background-image: url('./img/Python.png');"></div>
+                    <h3>Python</h3>
+
+                    <div class="skill-bar">
+                        <div class="skill" data-porcentaje="20"></div>
+                    </div>
+                    <p class="skill-text">20%</p>
+                </div>
+
+                <div class="proyecto-card">
+                    <div class="proyecto-img" style="background-image: url('./img/Block.jpg');"></div>
+                    <h3>Blockchain</h3>
+
+                    <div class="skill-bar">
+                        <div class="skill" data-porcentaje="10"></div>
+                    </div>
+                    <p class="skill-text">10%</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2 class="titulo-proyectos">Contáctame</h2>
+            <div class="divider"></div>
+
+            <div class="contacto-contenedor">
                 
-                <div class="skill-bar">
-                    <div class="skill" data-porcentaje="40"></div>
-                </div>
-                <p class="skill-text">40%</p>
+                <form class="formulario">
+                    <h3>Envíame una sugerencia</h3>
+
+                    <input type="text" placeholder="Tu nombre" required>
+                    <input type="email" placeholder="Correo" required>
+                    <textarea placeholder="Tu mensaje" required></textarea>
+
+                    <button type="submit" class="descargar-cv">Enviar</button>
+                </form>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>© 2025 Hecho por: Juan Jose Rendon Guzman</p>
+
+            <div class="contacto">
+                <h3>Contactame:</h3>
+                <a href="https://github.com/JuanR1207" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="https://www.instagram.com/jjrendon_12/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
             </div>
 
-            <div class="proyecto-card">
-                <div class="proyecto-img" style="background-image: url('./img/Python.png');"></div>
-                <h3>Python</h3>
+            </footer>
+            <script src="main.js"></script>
+            <script src="https://kit.fontawesome.com/43bbf7b39a.js" crossorigin="anonymous"></script>
 
-                <div class="skill-bar">
-                    <div class="skill" data-porcentaje="20"></div>
-                </div>
-                <p class="skill-text">20%</p>
-            </div>
-
-            <div class="proyecto-card">
-                <div class="proyecto-img" style="background-image: url('./img/Block.jpg');"></div>
-                <h3>Blockchain</h3>
-
-                 <div class="skill-bar">
-                    <div class="skill" data-porcentaje="10"></div>
-                </div>
-                <p class="skill-text">10%</p>
-            </div>
-
-        </div>
-    </section>
-
-     <section id="contacto" class="contacto">
-        <h2 class="titulo-proyectos">Contáctame</h2>
-        <div class="divider"></div>
-
-        <div class="contacto-contenedor">
-
-            <div class="contacto-info">
-                <h3>Información de Contacto</h3>
-                <p><strong>Email:</strong> juanjose.2006rendon@gmail.com</p>
-
-                <p>
-                    <strong>WhatsApp:</strong>  
-                    <a href="https://wa.link/1bur2j" target="_blank">Enviar mensaje</a>
-                </p>
-
-                <p>
-                    <strong>Instagram:</strong>  
-                    <a href="https://instagram.com/jjrendon_12" target="_blank">@jjrendon_12</a>
-                </p>
-            </div>
-
-            <form class="formulario">
-                <h3>Envíame una sugerencia</h3>
-
-                <input type="text" placeholder="Tu nombre" required>
-                <input type="email" placeholder="Correo" required>
-                <textarea placeholder="Tu mensaje" required></textarea>
-
-                <button type="submit" class="descargar-cv">Enviar</button>
-            </form>
-
-        </div>
-    </section>
-
-
-  
-    <footer class="footer">
-        <p>© 2025 Juan Jose Rendon Guzman </p>
-    </footer>
-    <script src="main.js"></script>
-
-</body>
+    </body>
 </html>
